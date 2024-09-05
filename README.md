@@ -34,15 +34,19 @@ This project involves downloading, extracting, and applying specific Linux comma
 Ensure the following tools are installed:
 
 - **Linux OS** (Ubuntu recommended)
-- **Packages**: `gzip`, `tar`, `afflib-tools`
+- **Packages**: `gzip`, `tar`, `afflib-tools` , `build-essential`, `libtool`, `autoconf`, `automake`, `git`, `libewf-dev`,
 
 You can install them using:
 
+### gzip tar afflib-tools
 ```bash
 sudo apt update
 sudo apt install gzip tar afflib-tools
 ```
-
+### build-essential libtool autoconf automake git libewf-dev
+```bash
+sudo apt install build-essential libtool autoconf automake git libewf-dev
+```
 ---
 <!--
 ## 📁 Setup Project Directory
