@@ -208,7 +208,6 @@ curl -O https://digitalcorpora.s3.amazonaws.com/corpora/drives/nps-2009-ntfs1/nt
   <img src="https://github.com/user-attachments/assets/984a1c3c-776d-4732-a3a1-faa0d19246b4" alt="AFF Info Output" />
 </p>
 <br>
-<br>
 
 ### 2. Extract Files
 
@@ -221,6 +220,12 @@ gzip -d gptimage.raw.gz
 # Extract .tar.gz file
 tar -xzvf able2.tar.gz
 ```
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/afd4df9c-4fea-463d-907c-6ffe73f5f305" alt="AFF Info Output" />
+</p>
+<br>
 
 ### 3. Apply Commands
 
