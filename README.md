@@ -131,21 +131,26 @@ Check images that sleuthkit support
 Mmls –i list:
 ```
 ---
-$$$$$$$$$$$$$$
-<!--
+
 ## 📁 Setup Project Directory
 
 First, create a dedicated directory for this project:
 
 ```bash
+cd Documents/
+cd GitHub/
 mkdir image-commands-project
 cd image-commands-project
 ```
 
 This directory will store all the downloaded files and the results of applied commands.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1aae89f8-2eff-4663-9d01-beb575554993" alt="AFF Info Output" />
+</p>
 
 ---
-
+$$$$$$$$$$$$$$
+<!--
 ## 📝 Steps
 
 ### 1. Download Required Files
