@@ -34,7 +34,7 @@ This project involves downloading, extracting, and applying specific Linux comma
 Ensure the following tools are installed:
 
 - **Linux OS** (Ubuntu recommended)
-- **Packages**: `gzip`, `tar`, `afflib-tools` , `build-essential`, `libtool`, `autoconf`, `automake`, `git`, `libewf-dev`, `sleuthkit`, `afflib3`, `libssl-dev`,
+- **Packages**: `gzip`, `tar`, `afflib-tools` , `build-essential`, `libtool`, `autoconf`, `automake`, `git`, `libewf-dev`, `sleuthkit`, `afflib3`, `libssl-dev`, `libvmdk-dev`, `libvslm-dev`
 
 You can install them using:
 
@@ -113,6 +113,23 @@ cd sleurhkit
 ./configure
 ```
 **sleuthkit now supports afflib**
+
+### sleuthkit supports all type of images
+```bash 
+cd
+sudo apt install libvhdi-dev libvmdk-dev libvslm-dev
+cd sleurhkit
+./configure
+```
+after that 
+```bash
+make
+sudo make install
+```
+Check images that sleuthkit support
+```bash
+Mmls –i list:
+```
 ---
 $$$$$$$$$$$$$$
 <!--
