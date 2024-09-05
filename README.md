@@ -34,7 +34,7 @@ This project involves downloading, extracting, and applying specific Linux comma
 Ensure the following tools are installed:
 
 - **Linux OS** (Ubuntu recommended)
-- **Packages**: `gzip`, `tar`, `afflib-tools` , `build-essential`, `libtool`, `autoconf`, `automake`, `git`, `libewf-dev`,
+- **Packages**: `gzip`, `tar`, `afflib-tools` , `build-essential`, `libtool`, `autoconf`, `automake`, `git`, `libewf-dev`, `sleuthkit`, `afflib3`, `libssl-dev`,
 
 You can install them using:
 
@@ -47,7 +47,74 @@ sudo apt install gzip tar afflib-tools
 ```bash
 sudo apt install build-essential libtool autoconf automake git libewf-dev
 ```
+### build-essential libtool autoconf automake git libewf-dev
+1. Download sleuthkit from github
+```bash 
+git clone https://github.com/sleuthkit/sleuthkit.git
+```
+
+2. Start install requirement by using script bootstrap.sh
+```bash 
+./bootstrasp
+or
+sh bootstrap.sh
+```
+3. checking all needed requirement for installing sleuthkit
+```bash 
+./configure
+```
+
+### afflib3 (to support image of type “.aff”)
+    
+1. Download sleuthkit from github
+```bash 
+git clone https://github.com/sshock/AFFLIBv3.git
+```
+    
+2. Start install requirement by using script bootstrap.sh
+```bash 
+./bootstrasp
+or
+sh bootstrap.sh
+```
+    
+3. checking all needed requirement for installing AFFLIB3
+```bash 
+./configure
+```
+### libssl-dev (missing library for AFFLIB3)
+1. install 
+```bash 
+sudo apt install libssl-dev
+```
+2. checking all needed requirement for installing AFFLIB3
+```bash 
+./configure
+```
+**pass**
+
+3. go to AFFLIB3 directory
+```bash 
+cd AFFLIB3
+```
+
+4. make to billd
+```bash 
+make
+sudo make install
+```
+5. go out then go to sleurhkit directory
+```bash 
+cd
+cd sleurhkit
+```
+6. checking all needed requirement for installing sleurhkit
+```bash 
+./configure
+```
+**sleuthkit now supports afflib**
 ---
+$$$$$$$$$$$$$$
 <!--
 ## 📁 Setup Project Directory
 
