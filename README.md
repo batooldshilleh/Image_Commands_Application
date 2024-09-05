@@ -128,8 +128,12 @@ sudo make install
 ```
 Check images that sleuthkit support
 ```bash
-Mmls –i list:
+mmls –i list
 ```
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7f7de936-e4d7-4263-9a28-3700acd4a8b9" alt="AFF Info Output" />
+</p>
+
 ---
 
 ## 📁 Setup Project Directory
@@ -230,34 +234,64 @@ tar -xzvf able2.tar.gz
 ### 3. Apply Commands
 
 Now, apply the necessary commands to the extracted files:
-
-- **Analyze `gptimage.raw`**:
-
-    ```bash
-    fdisk -l gptimage.raw
-    ```
-
-- **Analyze `ntfs1-gen1.aff`** with `affinfo`:
+<br>
+__**10-ntfs-disk.dd**__
+- **To list the partitions on an NTFS disk image:`**:
 
     ```bash
-    affinfo ntfs1-gen1.aff
+    cd 10b-ntfs-autodetect/
+    ls
+    cd 10b-ntfs-autodetect/
+    mmls 10-ntfs-disk.dd
     ```
 
-- **Explore the contents of `able2.tar.gz`**:
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/03f8552b-83dd-4f64-a639-f580ff1cf951" alt="AFF Info Output" />
+</p>
+<br>
+<br>
+
+
+- **To get the statistics of a disk image:**
 
     ```bash
-    cd able2
-    ls -l
+    img_stat 10-ntfs-disk.dd
     ```
 
-### 4. Verify Results
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7c77a4c2-0ab1-4f19-ac0d-0ec3c44683e7" alt="AFF Info Output" />
+</p>
+<br>
+<br>
 
-Check the outputs from the commands to ensure the image files were processed correctly:
+- **To display the metadata statistics of a disk image**:
 
-```bash
-fdisk -l gptimage.raw
-affinfo ntfs1-gen1.aff
-```
+    ```bash
+   mmstat 10-ntfs-disk.dd
+    ```
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/71fbcd82-1dcd-4e86-9ad2-26d628d61089" alt="AFF Info Output" />
+</p>
+<br>
+<br>
+
+- **To display file system statistics for a specific offset in an NTFS disk image**
+ ```bash
+   fsstat -o 63 -f ntfs 10-ntfs-disk.dd
+ ```
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3ee9730f-a83f-4956-8605-d4a47b9f5f63" alt="AFF Info Output" />
+</p>
+<br>
+<br>
 
 ---
 
