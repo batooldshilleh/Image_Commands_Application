@@ -149,8 +149,7 @@ This directory will store all the downloaded files and the results of applied co
 </p>
 
 ---
-$$$$$$$$$$$$$$
-<!--
+
 ## 📝 Steps
 
 ### 1. Download Required Files
@@ -163,6 +162,53 @@ wget https://dftt.sourceforge.net/test10/index.html
 wget https://linuxleo.com/Files/able2.tar.gz
 wget https://digitalcorpora.s3.amazonaws.com/corpora/drives/nps-2009-ntfs1/ntfs1-gen1.aff
 ```
+or 
+```bash
+curl -O https://linuxleo.com/Files/gptimage.raw.gz
+curl -O https://dftt.sourceforge.net/test10/index.html
+curl -O https://linuxleo.com/Files/able2.tar.gz
+curl -O https://digitalcorpora.s3.amazonaws.com/corpora/drives/nps-2009-ntfs1/ntfs1-gen1.aff
+```
+**Note** :
+### Difference between `wget` and `curl`:
+
+- **`wget`**:
+  - Specialized in **downloading files** from the internet.
+  - Easy to use for direct file downloads.
+  - Can resume downloads if the connection is interrupted.
+  - Useful for downloading entire websites.
+
+- **`curl`**:
+  - A **multi-purpose tool** for server communication.
+  - Can download, upload files, and send data over the network.
+  - Flexible in handling REST APIs and complex HTTP requests.
+  - Requires additional setup for resuming downloads.
+
+**In short**:
+- Use `wget` if you need simple file downloads.
+- Use `curl` if you need more flexibility or to interact with REST APIs.
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d147db9c-997d-4932-b182-061e2a74c490" alt="AFF Info Output" />
+</p>
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8d221922-6dcf-471d-b8fd-34a6bba3311e" alt="AFF Info Output" />
+</p>
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/06811447-34f6-452e-8bdb-a70424f32329" alt="AFF Info Output" />
+</p>
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/984a1c3c-776d-4732-a3a1-faa0d19246b4" alt="AFF Info Output" />
+</p>
+<br>
+<br>
 
 ### 2. Extract Files
 
@@ -209,6 +255,9 @@ affinfo ntfs1-gen1.aff
 ```
 
 ---
+
+$$$$$$$$$$$$$$
+<!--
 
 ## 📊 Expected Output
 
