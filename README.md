@@ -16,9 +16,7 @@
   - [1. Download Required Files](#1-download-required-files)
   - [2. Extract Files](#2-extract-files)
   - [3. Apply Commands](#3-apply-commands)
-- [Expected Output](#-expected-output)
 - [Resources](#-resources)
-- [Notes](#-notes)
 
 ---
 
