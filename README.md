@@ -294,6 +294,7 @@ __**10-ntfs-disk.dd**__
 <br>
 
 __**gptimage.raw.gz**__
+
 - **To list the partitions on an NTFS disk image:`**:
 
     ```bash
@@ -351,6 +352,64 @@ https://github.com/user-attachments/assets/904da836-42ff-4bd6-938e-a98c1053016f
 </p>
 <br>
 <br>
+
+__**able2.dd**__
+- **To list the partitions on an NTFS disk image:`**:
+
+    ```bash
+    ls
+    mmls able2.dd
+    ```
+
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/84de8e25-5b54-4fa2-9a99-289ade8d8915" alt="AFF Info Output" />
+</p>
+<br>
+<br>
+
+- **To get the statistics of a disk image:**
+
+    ```bash
+    img_stat able2.dd
+    ```
+
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ed8a9fdb-1185-4703-a437-46d47c32db77" alt="AFF Info Output" />
+</p>
+<br>
+<br>
+
+- **To display the metadata statistics of a disk image**:
+
+    ```bash
+   mmstat able2.dd
+    ```
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b95b7ac9-7490-4002-b5a2-d1a9d3e9c2df" alt="AFF Info Output" />
+</p>
+<br>
+<br>
+
+- **To display file system statistics for a specific offset in an NTFS disk image**
+ ```bash
+   fsstat -o 57 able2.dd
+ ```
+<br>
+<br>
+<p align="center">
+    
+https://github.com/user-attachments/assets/d67dccca-2c29-4756-af19-66041761350a
+
+</p>
+<br>
+<br>
+
 
 ---
 
