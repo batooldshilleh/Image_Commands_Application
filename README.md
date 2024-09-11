@@ -345,7 +345,9 @@ __**gptimage.raw.gz**__
 <br>
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3ee9730f-a83f-4956-8605-d4a47b9f5f63" alt="AFF Info Output" />
+  
+https://github.com/user-attachments/assets/904da836-42ff-4bd6-938e-a98c1053016f
+
 </p>
 <br>
 <br>
