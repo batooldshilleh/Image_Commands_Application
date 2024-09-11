@@ -152,6 +152,7 @@ This directory will store all the downloaded files and the results of applied co
   <img src="https://github.com/user-attachments/assets/1aae89f8-2eff-4663-9d01-beb575554993" alt="AFF Info Output" />
 </p>
 
+
 ---
 
 ## 📝 Steps
@@ -410,58 +411,51 @@ https://github.com/user-attachments/assets/d67dccca-2c29-4756-af19-66041761350a
 <br>
 <br>
 
+__**ntfs1-gen1.aff**__
+- **To get the statistics of a disk image:**
+
+    ```bash
+     ls
+    img_stat ntfs1-gen1.aff
+    ```
+
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0491574a-8da7-4215-9d84-225709ff15ad" alt="AFF Info Output" />
+</p>
+<br>
+<br>
+
+- **To display the metadata statistics of a disk image**:
+
+    ```bash
+   fls -o 0 ntfs1-gen1.aff
+    ```
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/56a59370-c618-41b7-b193-db01d48dc9bd" alt="AFF Info Output" />
+</p>
+<br>
+<br>
+
+- **To display file system statistics for a specific offset in an NTFS disk image**
+ ```bash
+   fsstat -o 0 ntfs1-gen1.aff
+ ```
+<br>
+<br>
+<p align="center">
+    
+https://github.com/user-attachments/assets/2bb7ce23-60cf-409f-8746-2b18741bd85d
+
+</p>
+<br>
+<br>
 
 ---
+## 📚 Resources
+- [AFFLIBv3 GitHub Repository](https://github.com/sshock/AFFLIBv3)
+- [Sleuthkit GitHub Repository](https://github.com/sleuthkit/sleuthkit)
 
-$$$$$$$$$$$$$$
-<!--
-
-## 📊 Expected Output
-
-Below are the expected outputs for each command, with screenshots included:
-
-- **`fdisk` output for `gptimage.raw`**:
-
-<p align="center">
-  <img src="path/to/partition-output.png" alt="Partition Output" />
-</p>
-
-- **`affinfo` output for `ntfs1-gen1.aff`**:
-
-<p align="center">
-  <img src="path/to/affinfo-output.png" alt="AFF Info Output" />
-</p>
-
-- **Contents extracted from `able2.tar.gz`**:
-
-<p align="center">
-  <img src="path/to/able2-contents.png" alt="Able2 Contents" />
-</p>
-
-Replace `path/to/` with the actual path to your image files in the repository.
-
----
-
-## 📂 Resources
-
-- [gptimage.raw.gz](https://linuxleo.com/Files/gptimage.raw.gz)
-- [test10 index](https://dftt.sourceforge.net/test10/index.html)
-- [able2.tar.gz](https://linuxleo.com/Files/able2.tar.gz)
-- [ntfs1-gen1.aff](https://digitalcorpora.s3.amazonaws.com/corpora/drives/nps-2009-ntfs1/ntfs1-gen1.aff)
-
----
-
-## 💡 Notes
-
-- Make sure that you have sufficient disk space to extract large files.
-- If any commands fail due to missing packages, ensure the required packages are installed by running the command:
-
-  ```bash
-  sudo apt install <missing-package-name>
-  ```
-
-- The screenshots provided in this README should be replaced with your actual output to reflect the results of your execution.
-
-<p align="center">🛠️ Created by <strong>Your Name</strong></p>
-
--->
